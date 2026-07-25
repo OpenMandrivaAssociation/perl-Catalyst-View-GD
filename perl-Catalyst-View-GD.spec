@@ -2,14 +2,14 @@
 %define upstream_version 0.01
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	A Catalyst View for GD images
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Catalyst-View-GD
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Catalyst-View-GD-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
