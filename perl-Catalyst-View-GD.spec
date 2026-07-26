@@ -1,15 +1,13 @@
 %define upstream_name    Catalyst-View-GD
-%define upstream_version 0.01
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.01
+Release:	7
 
 Summary:	A Catalyst View for GD images
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Catalyst-View-GD
-Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Catalyst-View-GD-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Catalyst-View-GD-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ This is a Catalyst View subclass which can handle rendering GD based image
 content. 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
